@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    "baseUrl": ".",  
+    "paths": {
+      "~/*": ["src/*"],
+      "@_assets/*": ["src/assets/*"],
+      "@_axios/*": ["src/axios/*"],
+      "@_components/*": ["src/components/*"],
+      "@_hooks/*": ["src/hooks/*"],
+      "@_layouts/*": ["src/layouts/*"],
+      "@_pages/*": ["src/pages/*"],
+      "@_services/*": ["src/services/*"],
+      "@_styles/*": ["src/styles/*"],
+      "@_types/*": ["src/types/*"],
+      "@_utils/*": ["src/utils/*"],
+      "@_zustand/*": ["src/zustand/*"],
+      "@_store/*": ["src/store/*"],
+      "@_navigation/*": ["src/navigation/*"]
+    },
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+ "include": ["src", "vite.config.ts", "src/svg.d.ts"]
+}
