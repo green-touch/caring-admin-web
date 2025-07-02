@@ -22,6 +22,7 @@ export default {
         gray10: '#F0F0F0',
         gray5: '#F8F8F8',
         gray0: '#FFFFFF',
+        background: '#F2F2F2',
 
         // Main 계열
         main900: '#152C4A',
