@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import LoginPage from '~/pages/loginsPage';
-import MainScreen from '~/pages/MainScreen';
-import MyInfoPage from '~/pages/MyinfoPage';
-import IndexPage from './pages/IndexPage'; 
-import UserAccountPage from './pages/UserAccounScreen';
-import SOSHistoryPage from './pages/SosHistoryPage';
-import SosTimelinePage from './pages/SosTimelinePage';
-import UserMonitoringPage from './pages/UserMonitoringPage';
+import LoginPage from '@_pages/loginsPage';
+import MainScreen from '@_pages/MainScreen';
+import MyInfoPage from '@_pages/MyinfoPage';
+import IndexPage from '@_pages/IndexPage'; 
+import UserAccountPage from '@_pages/UserAccounScreen';
+import SOSHistoryPage from '@_pages/SosHistoryPage';
+import SosTimelinePage from '@_pages/SosTimelinePage';
+import UserMonitoringPage from '@_pages/UserMonitoringPage';
 function App() {
   return (
     <BrowserRouter>
