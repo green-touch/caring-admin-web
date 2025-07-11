@@ -1,5 +1,5 @@
-import { create } from 'zustand';
-import type { TimelineLocation } from '@_types/timeline';
+import { create } from "zustand";
+import type { TimelineLocation } from "@_types/timeline";
 
 // TimelineTarget 타입 확장
 export interface TimelineTarget {
@@ -36,12 +36,12 @@ interface TimelineState {
 }
 
 export const useTimelineStore = create<TimelineState>()((set) => ({
-  title: '',
-  category: '',
+  title: "",
+  category: "",
   target: null,
   date: null,
   location: null,
-  content: '',
+  content: "",
   setTitle: (title) => set({ title }),
   setCategory: (category) => set({ category }),
   setTarget: (target) => set({ target }),
@@ -49,5 +49,12 @@ export const useTimelineStore = create<TimelineState>()((set) => ({
   setLocation: (location) => set({ location }),
   setContent: (content) => set({ content }),
   reset: () =>
-    set({ title: '', category: '', target: null, date: null, location: null, content: '' }),
+    set({
+      title: "",
+      category: "",
+      target: null,
+      date: null,
+      location: null,
+      content: "",
+    }),
 }));
