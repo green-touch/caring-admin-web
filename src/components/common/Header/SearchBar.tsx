@@ -1,7 +1,6 @@
-import { Search } from '@_assets/icon';
-import { useState } from 'react';
-
-import SearchResultItem from './SerachResultItem';
+import { Search } from "@_assets/icon";
+import SearchResultItem from "@_components/common/Header/SearchResultItem";
+import { useState } from "react";
 
 const mockResults = [
   { title: '사용자 계정관리', subtitle: '사용자 계정 정보 수정/삭제' },
