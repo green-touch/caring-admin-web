@@ -1,5 +1,6 @@
-import { useState } from 'react';
 import { Search } from '@_assets/icon';
+import { useState } from 'react';
+
 import SearchResultItem from './SerachResultItem';
 
 const mockResults = [

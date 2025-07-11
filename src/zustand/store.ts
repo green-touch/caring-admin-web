@@ -1,5 +1,5 @@
-import { create } from "zustand";
 import type { TimelineLocation } from "@_types/timeline";
+import { create } from "zustand";
 
 // TimelineTarget 타입 확장
 export interface TimelineTarget {
