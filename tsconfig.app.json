@@ -15,9 +15,10 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    "baseUrl": ".",  
+    "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],
+      "@_/*": ["src/*"],
       "@_assets/*": ["src/assets/*"],
       "@_axios/*": ["src/axios/*"],
       "@_components/*": ["src/components/*"],
@@ -41,5 +42,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
- "include": ["src", "vite.config.ts", "src/svg.d.ts"]
+  "include": ["src", "vite.config.ts", "src/svg.d.ts"]
 }
