@@ -1,12 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import IndexPage from '@_pages/IndexPage'; 
 import LoginPage from '@_pages/loginsPage';
 import MainScreen from '@_pages/MainScreen';
 import MyInfoPage from '@_pages/MyinfoPage';
-import IndexPage from '@_pages/IndexPage'; 
-import UserAccountPage from '@_pages/UserAccounScreen';
 import SosHistoryPage from '@_pages/SosHistoryPage';
 import SosTimelinePage from '@_pages/SosTimelinePage';
+import UserAccountPage from '@_pages/UserAccounScreen';
 import UserMonitoringPage from '@_pages/UserMonitoringPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>

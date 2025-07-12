@@ -1,5 +1,6 @@
-import { useState } from 'react';
 import { ChevronDownGray } from '@_assets/icon';
+import { useState } from 'react';
+
 import SidebarSubMenu from './SidebarSubMenu';
 
 const subMenus: Record<string, { label: string; path?: string }[]> = {

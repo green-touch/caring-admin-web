@@ -1,11 +1,11 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   label: string;
   path?: string;
 }
 
-export default function sidebarsubmenu({ label, path }: Props) {
+export default function Sidebarsubmenu({ label, path }: Props) {
   const navigate = useNavigate();
 
   return (
