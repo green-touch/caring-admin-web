@@ -1,6 +1,6 @@
+import type { FormData } from "@_schema/loginForm";
 import React from "react";
 import type { InputHTMLAttributes } from "react";
-import type { FormData } from "@_schema/loginForm";
 import type { UseFormRegister } from "react-hook-form";
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {

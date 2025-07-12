@@ -68,8 +68,6 @@ export default function LoginForm() {
                     onBlur={employeeIdOnBlur}
                     ref={employeeIdRef}
                     setValue={setValue}
-                    enableClearButton
-                    enablePasswordButton
                 />
                 {/* 비밀번호 입력: 플로팅 라벨 */}
                 <FloatingInput
@@ -83,8 +81,6 @@ export default function LoginForm() {
                     onBlur={passwordOnBlur}
                     ref={passwordRef}
                     setValue={setValue}
-                    enableClearButton
-                    enablePasswordButton
                 />
                 {/* 로그인 상태 유지 체크박스 */}
                 <div className="flex flex-row items-center justify-start gap-2 w-full">
