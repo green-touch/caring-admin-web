@@ -27,3 +27,5 @@ dist-ssr
 .yarn/install-state.gz
 .pnp.*
 .cache/
+*storybook.log
+storybook-static
