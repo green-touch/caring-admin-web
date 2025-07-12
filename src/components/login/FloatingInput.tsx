@@ -1,22 +1,24 @@
 import IcEyeRemove from "@_assets/icon/ic_eye_remove.svg?react";
 import IcEyeVisible from "@_assets/icon/ic_eye_visible.svg?react";
 import IcRemove from "@_assets/icon/ic_remove.svg?react";
+import type { FormData } from "@_schema/loginForm";
 import React, { useState } from "react";
 import type { HTMLInputTypeAttribute, InputHTMLAttributes } from "react";
-import type { FieldErrors, UseFormSetValue } from "react-hook-form";
+import type { UseFormSetValue } from "react-hook-form";
 import type { UseFormRegister } from 'react-hook-form';
+
 interface FloatingInputProps extends InputHTMLAttributes<HTMLInputElement> {
     label: string;
     id: string;
     type?: HTMLInputTypeAttribute;
     value?: string;
     error?: string;
-    register?: UseFormRegister<any>;
+    register?: UseFormRegister<FormData>;
     name?: string;
-    setValue?: UseFormSetValue<any>;
+    setValue?: UseFormSetValue<FormData>;
 }
 
-const CloseButton = ({ onClick, setValue }: { onClick: () => void, setValue: UseFormSetValue<any> }) => {
+const CloseButton = ({ onClick }: { onClick: () => void }) => {
     return (
         <button
             type="button"

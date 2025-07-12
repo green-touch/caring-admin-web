@@ -2,22 +2,13 @@ import IcRadioChecked from "@_assets/icon/ic_radio_checked.svg?react";
 import IcRadioDefault from "@_assets/icon/ic_radio_default.svg?react";
 import Description from "@_components/common/description";
 import FloatingInput from "@_components/login/FloatingInput";
+import { schema, type FormData } from "@_schema/loginForm";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { z } from "zod";
-
-
 
 export default function LoginForm() {
-    // zod 스키마 정의
-    const schema = z.object({
-        employeeId: z.string().min(1, "사번을 입력해주세요."),
-        password: z.string().min(1, "비밀번호를 입력해주세요."),
-        remember: z.boolean().optional(),
-    });
-    type FormData = z.infer<typeof schema>;
 
     const {
         register,

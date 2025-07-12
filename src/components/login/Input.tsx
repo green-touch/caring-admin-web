@@ -1,5 +1,7 @@
 import React from "react";
 import type { InputHTMLAttributes } from "react";
+import type { FormData } from "@_schema/loginForm";
+import type { UseFormRegister } from "react-hook-form";
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     label?: string;
@@ -7,7 +9,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     type?: string;
     value?: string;
     error?: string;
-    register?: any;
+    register?: UseFormRegister<FormData>;
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
