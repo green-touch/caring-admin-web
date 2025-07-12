@@ -15,9 +15,10 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    "baseUrl": ".",  
+    "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],
+      "@_/*": ["src/*"],
       "@_assets/*": ["src/assets/*"],
       "@_axios/*": ["src/axios/*"],
       "@_components/*": ["src/components/*"],
@@ -30,7 +31,8 @@
       "@_utils/*": ["src/utils/*"],
       "@_zustand/*": ["src/zustand/*"],
       "@_store/*": ["src/store/*"],
-      "@_navigation/*": ["src/navigation/*"]
+      "@_navigation/*": ["src/navigation/*"],
+      "@_schema/*": ["src/schema/*"]
     },
 
     /* Linting */
@@ -41,5 +43,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
- "include": ["src", "vite.config.ts", "src/svg.d.ts"]
+  "include": ["src", "vite.config.ts", "src/svg.d.ts"]
 }
