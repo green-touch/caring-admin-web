@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run lint
+
+# if lint fails, don't commit
+if [ $? -ne 0 ]; then
+  echo "Lint failed, please fix the errors and try again. try running 'npx eslint . --fix'"
+  exit 1
+fi
+
+# if lint fixes, commit
+if [ $? -eq 0 ]; then
+  echo "Lint passed, committing..."
+  exit 0
+fi
