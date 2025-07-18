@@ -5,7 +5,7 @@ npm run lint
 
 # if lint fails, don't commit
 if [ $? -ne 0 ]; then
-  echo "Lint failed, please fix the errors and try again."
+  echo "Lint failed, please fix the errors and try again. try running 'npx eslint . --fix'"
   exit 1
 fi
 
