@@ -18,7 +18,7 @@ export default function SearchBar() {
         <input
           type="text"
           placeholder="검색어를 입력해주세요."
-          className="w-full bg-transparent text-[#555555] placeholder-[#555555] text-[15px] font-normal leading-[23px] font-['Noto Sans KR'] outline-none"
+          className="w-full bg-transparent text-gray70 placeholder-gray70 text-[15px] font-normal leading-[23px] font-['Noto Sans KR'] outline-none"
           onFocus={() => setSearching(true)}
           onBlur={() => setTimeout(() => setSearching(false), 150)}
         />

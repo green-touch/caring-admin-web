@@ -7,6 +7,7 @@ const subMenus: Record<string, { label: string; path?: string }[]> = {
   '사용자 관리': [
     { label: '사용자 모니터링', path: '/main/user-monitoring' },
     { label: '사용자 계정 관리', path: '/main/user-account' },
+    { label: '사용자 알림 리스트', path: '/main/user-alertlist' },
   ],
   'SOS': [
     { label: 'SOS내역 조회', path: '/main/sos-history' },
