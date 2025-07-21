@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState, useRef, useEffect } from 'react';
 import { BellAlert, ChevronDownGray} from '@_assets/icon';
 import { notificationMock } from '@_types/notification';
@@ -56,11 +57,24 @@ export default function UserInfo() {
         <div className="w-[36px] h-[36px] rounded-full bg-gray30 flex items-center justify-center">
           <div className="w-[24px] h-[24px] rounded-full bg-gray30" />
         </div>
+=======
+import { BellAlert, ChevronDownGray } from '@_assets/icon';
+
+export default function UserInfo() {
+  return (
+    <div className="flex items-center gap-[24px] flex-shrink-0">
+      <button>
+        <BellAlert />
+      </button>
+      <div className="flex items-center gap-[12px] cursor-pointer">
+        <div className="w-[36px] h-[36px] rounded-full bg-[#D8D8D8]" />
+>>>>>>> 279e78628dd0a4f9de5d5ac8f8188c290d223911
         <span className="text-[15px] font-normal leading-[23px] text-black font-['Noto Sans KR']">
           김철수
         </span>
         <ChevronDownGray />
       </div>
+<<<<<<< HEAD
 
       {isAlarmOpen && (
         <NotificationDropdown
@@ -73,3 +87,8 @@ export default function UserInfo() {
     </div>
   );
 }
+=======
+    </div>
+  );
+}
+>>>>>>> 279e78628dd0a4f9de5d5ac8f8188c290d223911

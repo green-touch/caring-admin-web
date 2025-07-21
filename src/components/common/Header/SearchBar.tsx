@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import { useState } from 'react';
 import { Search } from '@_assets/icon';
 import SearchResultItem from './SearchResultItem';
+=======
+import { Search } from "@_assets/icon";
+import SearchResultItem from "@_components/common/Header/SearchResultItem";
+import { useState } from "react";
+>>>>>>> 279e78628dd0a4f9de5d5ac8f8188c290d223911
 
 const mockResults = [
   { title: '사용자 계정관리', subtitle: '사용자 계정 정보 수정/삭제' },
@@ -18,7 +24,11 @@ export default function SearchBar() {
         <input
           type="text"
           placeholder="검색어를 입력해주세요."
+<<<<<<< HEAD
           className="w-full bg-transparent text-gray70 placeholder-gray70 text-[15px] font-normal leading-[23px] font-['Noto Sans KR'] outline-none"
+=======
+          className="w-full bg-transparent text-[#555555] placeholder-[#555555] text-[15px] font-normal leading-[23px] font-['Noto Sans KR'] outline-none"
+>>>>>>> 279e78628dd0a4f9de5d5ac8f8188c290d223911
           onFocus={() => setSearching(true)}
           onBlur={() => setTimeout(() => setSearching(false), 150)}
         />

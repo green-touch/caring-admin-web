@@ -1,5 +1,5 @@
-import SearchBar from "./Header/SearchBar";
-import UserInfo from "./Header/UserInfo";
+import SearchBar from "@_components/common/Header/SearchBar";
+import UserInfo from "@_components/common/Header/UserInfo";
 
 export default function Header() {
   return (

@@ -1,6 +1,7 @@
-import { useState } from 'react';
 import { ChevronDownGray } from '@_assets/icon';
-import SidebarSubMenu from './Sidebarsubmenu';
+import { useState } from 'react';
+
+import SidebarSubMenu from './SidebarSubMenu';
 
 const subMenus: Record<string, { label: string; path?: string }[]> = {
   '사용자 관리': [
