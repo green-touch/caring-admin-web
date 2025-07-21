@@ -5,7 +5,7 @@ interface Props {
   path?: string;
 }
 
-export default function SidebarSubMenu({ label, path }: Props) {
+export default function SidebarSubmenu({ label, path }: Props) {
   const navigate = useNavigate();
 
   return (
