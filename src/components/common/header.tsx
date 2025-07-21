@@ -1,4 +1,4 @@
-import SearchBar from "./Header/SerachBar";
+import SearchBar from "./Header/SearchBar";
 import UserInfo from "./Header/UserInfo";
 
 export default function Header() {
