@@ -32,7 +32,8 @@
       "@_zustand/*": ["src/zustand/*"],
       "@_store/*": ["src/store/*"],
       "@_navigation/*": ["src/navigation/*"],
-      "@_schema/*": ["src/schema/*"]
+      "@_schema/*": ["src/schema/*"],
+      "@_api/*": ["src/api/*"]
     },
 
     /* Linting */

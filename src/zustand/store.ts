@@ -4,7 +4,7 @@ import { create } from "zustand";
 // TimelineTarget 타입 확장
 export interface TimelineTarget {
   name: string;
-  image?: any;
+  image?: unknown;
   status?: string;
   date?: string;
 }
@@ -14,6 +14,8 @@ interface BearState {
   increase: (by: number) => void;
 }
 
+// Bear store (예시용)
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const useBearStore = create<BearState>()((set) => ({
   bears: 0,
   increase: (by) => set((state) => ({ bears: state.bears + by })),
