@@ -6,7 +6,8 @@ import UserList from '@_components/Indexpage/UserList';
 export default function IndexPage() {
   return (
     <div className="px-[50px] py-4">
-      <TopStatusBox />
+      <TopStatusBox networkStatus="양호" currentCount={10} />
+
 
       <div className="grid grid-cols-2 gap-16 mt-10 px-6">
         <StatusList

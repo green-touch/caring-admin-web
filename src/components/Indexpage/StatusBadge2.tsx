@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   AlertTriangle,
-  AccoutGreen,
+  AccountGreen,
   AlertCircle,
 } from '@_assets/icon';
 
@@ -14,7 +14,7 @@ const StatusBadge2 = ({ label }: Props) => {
     정상: {
       bg: 'bg-green50',
       text: 'text-[#155615]',
-      icon: <AccoutGreen className="w-4 h-4" />,
+      icon: <AccountGreen className="w-4 h-4" />,
     },
     경고: {
       bg: 'bg-yellow50',

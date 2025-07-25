@@ -1,6 +1,6 @@
 import {
   AlertTriangle,
-  AccoutGreen,
+  AccountGreen,
   AlertCircle,
 } from '@_assets/icon';
 
@@ -28,7 +28,7 @@ export const notificationMock: NotificationCardProps[] = [
     action: '전화 요청',
     time: '8시간 전',
     status: '안전 상태',
-    icon: <AccoutGreen className="w-[16px] h-[16px] text-green-800" />,
+    icon: <AccountGreen className="w-[16px] h-[16px] text-green-800" />,
     isRead: true,
   },
   {
@@ -44,7 +44,7 @@ export const notificationMock: NotificationCardProps[] = [
     action: '전화 요청',
     time: '8시간 전',
     status: '안전 상태',
-    icon: <AccoutGreen className="w-[16px] h-[16px] text-green-800" />,
+    icon: <AccountGreen className="w-[16px] h-[16px] text-green-800" />,
     isRead: true,
   },
   {
@@ -52,7 +52,7 @@ export const notificationMock: NotificationCardProps[] = [
     action: '전화 요청',
     time: '8시간 전',
     status: '안전 상태',
-    icon: <AccoutGreen className="w-[16px] h-[16px] text-green-800" />,
+    icon: <AccountGreen className="w-[16px] h-[16px] text-green-800" />,
     isRead: true,
   },
 ];

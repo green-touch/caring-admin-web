@@ -7,6 +7,12 @@ export interface StatusListProps {
 }
 
 
+
+export interface TopStatusBoxProps {
+  networkStatus: string;
+  currentCount: number;
+}
+
 import userImage1 from '@_assets/images/img_user_ex_01.png';
 import userImage2 from '@_assets/images/img_user_ex_02.png';
 //sos list 임시 데이터
