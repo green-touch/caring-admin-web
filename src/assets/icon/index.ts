@@ -57,4 +57,4 @@ export { default as TrashRed } from './ic_trash_red.svg?react';
 export { default as Trash } from './ic_trash.svg?react';
 export { default as SOSBedge } from './SOS bedge.svg?react';
 export { default as AccountDis} from'./ic_account_dis.svg?react';
-export {default as AccoutGreen} from'./ic_alert_green.svg?react';
+export {default as AccountGreen} from'./ic_alert_green.svg?react';

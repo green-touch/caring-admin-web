@@ -2,7 +2,7 @@ import IndexPage from '@_pages/IndexPage';
 import LoginPage from '@_pages/LoginPage';
 import MainScreen from '@_pages/MainScreen';
 import MyInfoPage from '@_pages/MyinfoPage';
-import UserAlertListPage from './pages/UserAlertListPage';
+import UserAlertListPage from '@_pages/UserAlertListPage';
 import SosHistoryPage from '@_pages/SosHistoryPage';
 import SosTimelinePage from '@_pages/SosTimelinePage';
 import UserAccountPage from '@_pages/UserAccounScreen';
