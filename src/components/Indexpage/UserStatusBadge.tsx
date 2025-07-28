@@ -1,15 +1,13 @@
-import React from 'react';
+
 import {
   AlertTriangle,
   AccountGreen,
   AlertCircle,
 } from '@_assets/icon';
 
-interface Props {
-  label: '정상' | '경고' | '위험';
-}
+import type { UserStatusProps } from '@_types/indexpage';
 
-const StatusBadge2 = ({ label }: Props) => {
+const UserStatusBadge = ({ label }: UserStatusProps) => {
   const config = {
     정상: {
       bg: 'bg-green50',
@@ -36,4 +34,4 @@ const StatusBadge2 = ({ label }: Props) => {
   );
 };
 
-export default StatusBadge2;
+export default UserStatusBadge;

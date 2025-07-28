@@ -1,19 +1,11 @@
+
 import {
   AlertTriangle,
   AccountGreen,
   AlertCircle,
 } from '@_assets/icon';
+import type { NotificationCardProps } from "@_types/notification";
 
-// 헤더 알람 관련 임시 데이터 
-export interface NotificationCardProps {
-  name: string;
-  action: string;
-  time: string;
-  status: string;
-  icon: React.ReactNode;
-  isRead: boolean;  
-
-}
 export const notificationMock: NotificationCardProps[] = [
   {
     name: '홍길동',

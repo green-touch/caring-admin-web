@@ -1,11 +1,8 @@
 import React from 'react';
 
-interface Props {
-  label: string;
-  type: 'ing' | 'done';
-}
+import type { ProcessProps } from '@_types/indexpage';
 
-const StatusBadge = ({ label, type }: Props) => {
+const ProcessBadge = ({ label, type }:ProcessProps) => {
   const styles = {
     ing: {
       bg: 'bg-main50',
@@ -24,4 +21,4 @@ const StatusBadge = ({ label, type }: Props) => {
   );
 };
 
-export default StatusBadge;
+export default ProcessBadge;

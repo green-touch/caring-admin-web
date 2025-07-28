@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
-import { BellAlert, ChevronDownGray} from '@_assets/icon';
-import { notificationMock } from '@_types/notification';
+import { BellAlert, ChevronDownGray } from '@_assets/icon';
+import { notificationMock } from '@_constants/notification';
 import NotificationDropdown from './NotificationDropDown';
 import UserMenuDropdown from './UserMenuDropdown';
 
@@ -15,7 +15,20 @@ export default function UserInfo() {
   const [notifications, setNotifications] = useState(notificationMock);
   const unreadCount = notifications.filter((n) => !n.isRead).length;
 
+  const user = {
+    name: '김철수',
+    organization: '행복 복지관 소속',
+    avatar: '',
+  };
+  const handleMyInfoClick = () => {
+    console.log('내 정보 클릭됨');
+    setIsOpen(false);
+  };
 
+  const handleLogoutClick = () => {
+    console.log('로그아웃 클릭됨');
+    setIsOpen(false);
+  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -28,7 +41,7 @@ export default function UserInfo() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  
+
 
   return (
     <div className="relative flex items-center gap-[24px] flex-shrink-0" ref={dropdownRef}>
@@ -69,7 +82,14 @@ export default function UserInfo() {
         />
       )}
 
-      {isOpen && <UserMenuDropdown />}
+      {isOpen && (
+        <UserMenuDropdown
+          user={user}
+          onMyInfoClick={handleMyInfoClick}
+          onLogoutClick={handleLogoutClick}
+        />
+      )}
+
     </div>
   );
 }
