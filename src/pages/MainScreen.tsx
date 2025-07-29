@@ -1,8 +1,8 @@
 
-import Footer from '@_components/common/footor';
+import { Outlet } from 'react-router-dom';
 import Header from '@_components/common/header';
 import Sidebar from '@_components/common/sidebar';
-import { Outlet } from 'react-router-dom';
+import Footer from '@_components/common/footor';
 
 
 export default function MainScreen() {

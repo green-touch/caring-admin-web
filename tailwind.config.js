@@ -86,6 +86,7 @@ export default {
         blue200: '#97AEFE',
         blue100: '#B9C8FE',
         blue50: '#E8EDFF',
+        secon50: '#ECEFF7',
       },
     },
   },
