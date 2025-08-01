@@ -2680,6 +2680,7 @@ __metadata:
     "@types/react-dom": ^19.1.6
     "@vitejs/plugin-react": ^4.5.2
     autoprefixer: ^10.4.21
+    classnames: ^2.5.1
     eslint: ^9.29.0
     eslint-plugin-import: ^2.32.0
     eslint-plugin-react-hooks: ^5.2.0
@@ -2772,6 +2773,13 @@ __metadata:
   version: 2.1.0
   resolution: "cjs-module-lexer@npm:2.1.0"
   checksum: beeece5cfc4fd77f5c41c30c3942f6219be5bf9f323148a5e52a87414bf35017e2a0aec5d8e25e694af26f05ff833515ccae6dbe1316e4cd44b4c38f11ba949e
+  languageName: node
+  linkType: hard
+
+"classnames@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "classnames@npm:2.5.1"
+  checksum: da424a8a6f3a96a2e87d01a432ba19315503294ac7e025f9fece656db6b6a0f7b5003bb1fbb51cbb0d9624d964f1b9bb35a51c73af9b2434c7b292c42231c1e5
   languageName: node
   linkType: hard
 

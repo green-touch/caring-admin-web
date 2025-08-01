@@ -4,6 +4,7 @@ import MainScreen from '@_pages/MainScreen';
 import MyInfoPage from '@_pages/MyinfoPage';
 import UserAlertListPage from '@_pages/UserAlertListPage';
 import SosHistoryPage from '@_pages/SosHistoryPage';
+import SosUserDetailPage from '@_pages/SosUserDetailPage';
 import SosTimelinePage from '@_pages/SosTimelinePage';
 import UserAccountPage from '@_pages/UserAccounScreen';
 import UserMonitoringPage from '@_pages/UserMonitoringPage';
@@ -20,6 +21,7 @@ function App() {
           <Route path="user-monitoring" element={<UserMonitoringPage />} />
           <Route path="user-alertlist" element={<UserAlertListPage />} />
           <Route path="sos-history" element={<SosHistoryPage />} />
+          <Route path="sos-detail/:id" element={<SosUserDetailPage />} />
           <Route path="sos-timeline" element={<SosTimelinePage />} />
         </Route>
       </Routes>
