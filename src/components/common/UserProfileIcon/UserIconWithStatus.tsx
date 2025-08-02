@@ -1,12 +1,9 @@
 import React from 'react';
 import NoprofileUserIcon from './NoProfileUserIcon';
+import type { UserAvatarWithStatusProps } from '@_types/icon';
 
-interface UserAvatarWithStatusProps {
-  image?: string;
-  connected: boolean;
-}
 
-const UserAvatarWithStatus: React.FC<UserAvatarWithStatusProps> = ({ image, connected }) => {
+const UserIconWithStatus: React.FC<UserAvatarWithStatusProps> = ({ image, connected }) => {
   return (
     <div className="relative w-[54px] h-[54px]">
       {image ? (
@@ -19,11 +16,11 @@ const UserAvatarWithStatus: React.FC<UserAvatarWithStatusProps> = ({ image, conn
         <NoprofileUserIcon />
       )}
       <div
-        className="absolute top-0 left-0 w-4 h-4 rounded-full border-2 border-white"
+        className="absolute top-0 left-0 w-4 h-4 rounded-full border-1 border-white"
         style={{ backgroundColor: connected ? '#1C711C' : '#555555' }}
       />
     </div>
   );
 };
 
-export default UserAvatarWithStatus;
+export default UserIconWithStatus;
