@@ -13,6 +13,13 @@ export interface StatusListProps {
   headerRight?: React.ReactNode;
 }
 
+export interface SosListProps {
+  title: string;
+  count: number;
+  showIcon?: boolean;
+  titleColor?: string;
+  showSortBox?: boolean;
+}
 
 
 export interface TopStatusBoxProps {
@@ -21,11 +28,11 @@ export interface TopStatusBoxProps {
 }
 
 
-export interface ProcessStatusProps {
+export interface ProcessProps {
+  type: "ing" | "done" | "assigned" | "unassigned";
   label: string;
-  type: 'ing' | 'done';
 }
-
 export interface UserStatusProps {
   label: '정상' | '경고' | '위험';
 }
+

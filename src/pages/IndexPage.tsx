@@ -39,7 +39,7 @@ export default function IndexPage() {
       </div>
 
       <div className="mt-10 px-6">
-        <SosList />
+       <SosList title="SOS 리스트" count={4} showIcon={true} titleColor="text-black" />
       </div>
 
       <div className="mt-10 mb-16 px-6">

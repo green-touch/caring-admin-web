@@ -12,7 +12,7 @@ export const notificationMock: NotificationCardProps[] = [
     action: 'SOS 요청',
     time: '4시간 전',
     status: '위험 상태',
-    icon: <AlertTriangle className="w-[16px] h-[16px] text-red-500" />,
+    icon: <AlertTriangle className="w-[16px] h-[16px] text-red500" />,
     isRead: false,
   },
   {
@@ -20,7 +20,7 @@ export const notificationMock: NotificationCardProps[] = [
     action: '전화 요청',
     time: '8시간 전',
     status: '안전 상태',
-    icon: <AccountGreen className="w-[16px] h-[16px] text-green-800" />,
+    icon: <AccountGreen className="w-[16px] h-[16px] text-green800" />,
     isRead: true,
   },
   {
@@ -28,7 +28,7 @@ export const notificationMock: NotificationCardProps[] = [
     action: '정보 변경 요청',
     time: '8시간 전',
     status: '경고 상태',
-    icon: <AlertCircle className="w-[16px] h-[16px] text-green-800" />,
+    icon: <AlertCircle className="w-[16px] h-[16px] text-green800" />,
     isRead: true,
   },
   {
@@ -36,7 +36,7 @@ export const notificationMock: NotificationCardProps[] = [
     action: '전화 요청',
     time: '8시간 전',
     status: '안전 상태',
-    icon: <AccountGreen className="w-[16px] h-[16px] text-green-800" />,
+    icon: <AccountGreen className="w-[16px] h-[16px] text-green800" />,
     isRead: true,
   },
   {
@@ -44,7 +44,7 @@ export const notificationMock: NotificationCardProps[] = [
     action: '전화 요청',
     time: '8시간 전',
     status: '안전 상태',
-    icon: <AccountGreen className="w-[16px] h-[16px] text-green-800" />,
+    icon: <AccountGreen className="w-[16px] h-[16px] text-green800" />,
     isRead: true,
   },
 ];
