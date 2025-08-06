@@ -1,16 +1,19 @@
 import { Account, BellSos, Home, Setting } from '@_assets/icon';
 import SidebarGroup from './sidebar/SidebarGroup';
+import { useNavigate } from 'react-router-dom';
 
 export default function Sidebar() {
-  const goHome = () => {
-    window.location.replace('/main'); 
+  const navigate = useNavigate();
+
+  const goMain = () => {
+    navigate('/main', { replace: true });
   };
 
   return (
     <aside className="w-[264px] min-h-screen bg-[#233042] border-r border-white/10 shadow-[6px_4px_6px_rgba(0,0,0,0.02)] pt-4 pl-4 flex flex-col gap-10 text-white">
       <div
         className="h-[64px] flex items-center justify-start px-4 cursor-pointer"
-        onClick={goHome}
+        onClick={goMain}
       >
         <span className="text-[#F8F8F8] text-[32px] font-bold tracking-wide">
           CARING

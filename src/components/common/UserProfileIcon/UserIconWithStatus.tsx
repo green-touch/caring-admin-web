@@ -1,6 +1,7 @@
+import type { UserAvatarWithStatusProps } from '@_types/icon';
 import React from 'react';
 import NoprofileUserIcon from './NoProfileUserIcon';
-import type { UserAvatarWithStatusProps } from '@_types/icon';
+
 
 
 const UserIconWithStatus: React.FC<UserAvatarWithStatusProps> = ({ image, connected }) => {

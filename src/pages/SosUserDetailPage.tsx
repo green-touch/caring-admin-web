@@ -1,14 +1,13 @@
 import { useParams } from 'react-router-dom';
-import { sosListData, UserListdata } from '@_constants/indexpage';
-import { TimelineData } from '@_constants/sosDetail';
 
-
-
-import SosStatusCard from '@_components/soshistorypage/SosStatusCard';
-import TimelineCard from '@_components/soshistorypage/TimeLineCard';
 import EmergencyContactCard from '@_components/soshistorypage/EmergencyContactCard';
 import SosCountCard from '@_components/soshistorypage/SosCountCard';
+import SosStatusCard from '@_components/soshistorypage/SosStatusCard';
+import TimelineCard from '@_components/soshistorypage/TimeLineCard';
 import UserInfoCard from '@_components/soshistorypage/UserInfoCard';
+
+import { sosListData, UserListdata } from '@_constants/indexpage';
+import { TimelineData } from '@_constants/sosDetail';
 
 
 export default function SosUserDetailPage() {
@@ -22,7 +21,7 @@ export default function SosUserDetailPage() {
 
     const timelineData = TimelineData;
 
-   
+
     const emergencyContacts = [
         { name: '홍길순', relation: '자녀', phone: '010-1234-5678' },
         { name: '김철수', relation: '지인', phone: '010-1234-5678' },
