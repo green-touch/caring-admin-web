@@ -6,7 +6,7 @@ import UserAlertListPage from '@_pages/UserAlertListPage';
 import SosHistoryPage from '@_pages/SosHistoryPage';
 import SosUserDetailPage from '@_pages/SosUserDetailPage';
 import SosTimelinePage from '@_pages/SosTimelinePage';
-import UserAccountPage from '@_pages/UserAccounScreen';
+import UserAccountPage from '@_pages/UserAccountScreen';
 import UserMonitoringPage from '@_pages/UserMonitoringPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {

@@ -2,9 +2,10 @@ import { ChevronDownBlack } from "@_assets/icon";
 
 interface SortBoxProps {
   label: string;
+  onClick?: () => void;
 }
 
-export default function SortBox({ label }: SortBoxProps) {
+export default function SortBox({ label, onClick }: SortBoxProps) {
   return (
     <div className="flex items-center gap-2 whitespace-nowrap">
       <span className="text-[20px] text-gray90 font-['Noto Sans KR']">
@@ -14,8 +15,8 @@ export default function SortBox({ label }: SortBoxProps) {
         className="flex items-center gap-2 h-[39px] px-[12px] py-[8px] rounded-[4px] border border-gray40 text-gray90 font-['Noto Sans KR'] text-[20px] leading-[22px]"
       >
         {label}
-        <ChevronDownBlack />
+        <ChevronDownBlack onClick={onClick}/>
       </button>
-    </div>
+    </div> 
   );
 }

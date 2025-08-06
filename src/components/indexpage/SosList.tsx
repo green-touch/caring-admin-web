@@ -15,8 +15,8 @@ interface SosListProps {
 
 export default function SosList({
   title,
-  count,
-  showIcon,
+  count = 0,
+  showIcon = false,
   titleColor = 'text-gray70',
   showSortBox = true,
 }: SosListProps) {
@@ -30,6 +30,7 @@ export default function SosList({
           count={count}
           showIcon={showIcon}
           titleColor={titleColor}
+          periodText="조회 기간 : 2025.01.16~2025.01.23"
         />
         {showSortBox && (
           <div className="mt-2">

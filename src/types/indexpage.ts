@@ -29,10 +29,9 @@ export interface TopStatusBoxProps {
 
 
 export interface ProcessProps {
+  type: "ing" | "done" | "assigned" | "unassigned";
   label: string;
-  type: 'ing' | 'done';
 }
-
 export interface UserStatusProps {
   label: '정상' | '경고' | '위험';
 }
